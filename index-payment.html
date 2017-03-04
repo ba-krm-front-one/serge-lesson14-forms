@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.png"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style-payment.css" />
+
+</head>
+<body>
+<main>
+    <div class="flex-container">
+    <header class="header">
+        <div class="header__topic">
+            <h1>Harold Finch</h1>
+            <h1>your total</h1>
+        </div>
+        <!--<p>$88</p>-->
+    </header>
+    <form action="#" class="allforms">
+        <p>Credit card number</p>
+        <label>
+            <input type="number" class="allforms__entry-field">
+        </label>
+        <p>Expiration date</p>
+        <label class="date-entry-field">
+            <select name="mounth" class="allforms__entry-field allforms__mounth">
+                <option value="#">Mounth</option>
+                <option value="#">February</option>
+                <option value="#">March</option>
+                <option value="#">April</option>
+            </select>
+            <select name="year" class="allforms__entry-field">
+                <option value="#">Year</option>
+                <option value="#">2018</option>
+                <option value="#">2019</option>
+                <option value="#">2020</option>
+            </select>
+        </label>
+        <p>CVV</p>
+        <label class="last-entry-field">
+            <input type="number" class="allforms__entry-field allforms__cvv-code">
+            <p class="allforms__cvv-prompt">3 or 4 digits - view example</p>
+        </label>
+    </form>
+        <hr>
+    <footer >
+        <button class="buttons">Pay</button>
+        <button class="buttons">Cancel Order</button>
+    </footer>
+    </div>
+</main>
+</body>
+</html>
