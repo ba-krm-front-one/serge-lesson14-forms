@@ -6,13 +6,46 @@
 body {
     height: 100%;
     width: 100%;
+    background-image: linear-gradient(#5884ff, #383800, #85f8ff);
+}
+.left-panel {
+    display: block;
+    font-family: "Arial", sans-serif;
+    font-size: 45px;
+    line-height: 50px;
+    float: left;
+    white-space: pre-line;
+    background-color: white;
+    padding: 20px 40px;
+    width: 10%;
+    height: 100%;
+}
+@media all and (max-width: 960px) {
+    .left-panel {
+        width: 100%;
+        height: 80px;
+        float: none;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: -40px;
+    }
 }
 .flex-container {
+    float: right;
     height: 100%;
     display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #d5f4f7;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+}
+@media all and (max-width: 960px) {
+    .flex-container {
+        width: 100%;
+        float: none;
+    }
 }
 .flex-container__link {
     color: #8eff72;
@@ -20,35 +53,48 @@ body {
     font-size: 45px;
     font-weight: 700;
     line-height: 48px;
-    text-align: center;
-    text-decoration: none;
+    /*text-align: center;
+    text-decoration: none;*/
 
+    display: block;
+    width: 500px;
+    height: 300px;
+    opacity: 0.5;
+    border: 5px solid transparent;
+    border-radius: 13px;
 }
 .flex-container a:first-child {
-    background: url("../dailyform.png") repeat-y;
-    max-width: 25%;
-    margin-left: 25px;
-    margin-right: 25px;
+    background: url("../dailyform.png") 50%,no-repeat;
+}
+.flex-container a:first-child:hover {
+    transition: 0.8s;
+    opacity: 1;
+    border-color: #3fe9df;
 }
 .flex-container a:nth-child(2) {
-    background: url("../payment-form.png") repeat-y;
-    max-width: 25%;
-    margin-left: 25px;
-    margin-right: 25px;
+    background: url("../payment-form.png") 50%,no-repeat;
     color: #ff7129;
 }
+.flex-container a:nth-child(2):hover {
+    transition: 0.8s;
+    opacity: 1;
+    border-color: coral;
+}
 .flex-container a:nth-child(3) {
-    background: url("../newsletter_form.png") repeat-y;
-    max-width: 25%;
-    white-space: nowrap;
-    margin-left: 25px;
-    margin-right: 25px;
+    background: url("../newsletter_form.png") 50%,no-repeat;
     color: #41b878;
 }
+.flex-container a:nth-child(3):hover {
+    transition: 0.8s;
+    opacity: 1;
+    border-color: #50ff6b;
+}
 .flex-container a:nth-child(4) {
-    background: url("../sign-in-form.png") repeat-y;
-    max-width: 25%;
-    margin-left: 25px;
-    margin-right: 25px;
+    background: url("../sign-in-form.png") 50%,no-repeat;
     color: #1b1c1d;
+}
+.flex-container a:nth-child(4):hover {
+    transition: 0.8s;
+    opacity: 1;
+    border-color: #ffff40;
 }

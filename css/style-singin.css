@@ -42,6 +42,7 @@ body {
     border-bottom: 2px solid transparent;
 }
 .form-navigation__btns:hover {
+    transition: 0.9s;
     color: #fbf6e4;
     border-bottom: 2px solid #e66a64;
 }
