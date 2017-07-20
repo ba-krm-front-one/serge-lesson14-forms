@@ -1,0 +1,159 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body {
+    background: url("../image/payment-backgrnd.png") 100%, no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.flex-container {
+    display: block;
+    background-color: #F5F6F6;
+    min-width: 50px;
+    max-width: 336px;
+    max-height: 532px;
+    width: 100%;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    background: url("../image/headerbckgrnd88.png") 100%, no-repeat;
+    background-size: 100%;
+    /*max-height: 72px;
+    background-color: #f8edaf;*/
+    min-width: 150px;
+    max-width: 100%;
+}
+.header__topic h1:first-child {
+    color: #6e7f7b;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 24px;
+    margin-top: 25px;
+    min-width: 50px;
+}
+.header__topic h1:last-child {
+    color: #a6a28d;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-left: 24px;
+    margin-top: -10px;
+    margin-bottom: 23px;
+    min-width: 50px;
+}
+/*.header p {
+    color: #637570;
+    font-size: 36px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    position: relative;
+    margin: 0;
+
+}*/
+/*____________ALL FORMS____________*/
+.allforms {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    
+
+}
+.allforms__entry-field {
+    border: 2px solid #bac8cb;
+    background-color: #ffffff;
+    height: 44px;
+    max-width: 288px; /*credit card №*/
+    color: #727f82;
+    font-family: Montserrat,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.allforms__mounth {
+    max-width: 176px;
+    min-width: 150px;
+    margin-right: 10px;
+
+}
+.allforms__entry-field:nth-child(2) {       /*YEAR*/
+    max-width: 96px;
+    min-width: 50px;
+
+
+}
+.date-entry-field {
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    width: 100%;
+    min-width: 50px;
+}
+.allforms__cvv-code {
+    max-width: 96px;
+    min-width: 50px;
+}
+.last-entry-field {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    min-width: 150px;
+}
+.allforms__cvv-prompt {
+    min-width: 88px;
+    max-width: 167px;
+    margin-left: 9px;
+    color: #9eabad;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+hr {
+    width: 250px;
+    margin-top: 26px;
+    margin-bottom: 25px;
+}
+.buttons {
+    max-width: 252px;
+    height: 48px;
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #25b86a;
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+.pay:hover {
+    transition: 0.8s;
+    background-color: green;
+}
+.buttons:nth-of-type(2) {
+    background: none;
+    color: #9eabad;
+    font-size: 12px;
+    font-weight: 400;
+}
+.cancel:hover {
+    transition: 0.5s;
+    color: red;
+    transform: scale(1.2);
+}

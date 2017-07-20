@@ -1,0 +1,101 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #e4eded;
+    padding: 70px 0;
+}
+.container {
+    max-width: 400px;
+    min-height: 520px;
+    margin: auto;
+    position: relative;
+}
+.form-container {
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    min-height: 496px;
+    background: url("../image/bridge.png"), linear-gradient(30deg, rgb(5, 0, 171), rgb(227, 105, 229));
+    background-size: cover;
+    box-shadow: 0 0 10px 1px #667582;
+    z-index: 2;
+    position: relative;
+    padding: 50px 70px 35px;
+    letter-spacing: 0.07em;
+}
+.form-navigation__btns {
+    color:  #e1c2f1;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 26px;
+    text-decoration: none;
+    padding-bottom: 3px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+}
+.form-navigation__btns:hover {
+    transition: 0.9s;
+    color: #fbf6e4;
+    border-bottom: 2px solid #e66a64;
+}
+.signin {
+    margin-top: 39px;
+}
+.signin__block {
+    color:  #fbf6e4;
+    font-size: 16px;
+    font-weight: 700;
+}
+.signin__block:nth-child(4) {
+    font-size: 13px;
+    display: inline-block;
+}
+.signin__input {
+    border: 2px solid #BFB9CC;
+    background: none;
+    width: 100%;
+    padding-left: 15px;
+    height: 42px;
+    margin: 10px 0 18px;
+}
+/*.signin__checkbox {
+    color: green;
+}*/
+.signin__submit {
+    background-color: #23ae92;
+    width: 100%;
+    height: 42px;
+    color: #fbf6e4;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 41px;
+}
+.signin__submit:hover {
+    color: #23ae92;
+    background: none;
+    border: 2px solid #23ae92;
+}
+.help {
+    margin-top: 25px;
+}
+.help-links {
+    display: inline-block;
+    color:  #b9b9cc;
+    font-size: 12px;
+
+    padding-bottom: 2px;
+}
+.help-links:first-child {
+    margin-right: 23px;
+}
+.help-links:hover {
+    color: #fff;
+}
